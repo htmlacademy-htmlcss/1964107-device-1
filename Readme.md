@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Лена Чепелова](https://up.htmlacademy.ru/htmlcss-individual/1/user/1964107).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Лесухин https://htmlacademy.ru/profile/caneklis`.
 
 ---
 
