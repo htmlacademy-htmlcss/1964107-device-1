@@ -18,7 +18,7 @@
           <a class="user-logo">
             <img src="#" alt="#">
           </a>
-          <a class="header-login" href="#">Войти</a>
+          <button class="header-login" type="submit">Войти</button>
         </li>
         <li class="user-item">
           <a class="user-match">
@@ -58,15 +58,15 @@
         <div class="slide-wrapper">
           <ul class="main-slide-list">
             <li class="slide-item">
-              <button class="slide-button" type="submit">
-                <img src="#" alt="свап влево" width="" height="">
+              <button class="slide-button slide-left" type="submit">
+                <span class="visually-hidden">свап влево</span>
               </button>
             </li>
             <li class="slide-img">
-              <img src="#" alt="вертушка убийца" width="#" height="#">
+              <span class="visually-hidden">свап вправо</span>
             </li>
             <li class="slide-item">
-              <button class="slide-button" type="submit">
+              <button class="slide-button slide-right" type="submit">
                 <img src="#" alt="свап впрво" width="" height="">
               </button>
             </li>
@@ -89,14 +89,23 @@
             </table>
           </div>
           <div class="pagination">
-            <ul class="pagination-list">
+            <ol class="pagination-list">
               <li class="pagination-item">
+                <button class="slide-pagination-button current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
               </li>
               <li class="pagination-item">
+                <button class="slide-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
               </li>
               <li class="pagination-item">
+                <button class="slide-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </section>
@@ -156,24 +165,24 @@
       <section class="main-contacts">
         <h2 class="visually-hidden">Информация о магазине.</h2>
         <div class="about-wrapper">
-          <h3>О нас</h3>
+          <h3 class="about-title">О нас</h3>
           <ul class="about-list">
             <li class="about-item">
-              <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+              <p class="about-discription">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             </li>
             <li class="about-item">
-              <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+              <p class="about-discription">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             </li>
             <li class="about-item">
               <ul class="transport-list">
                 <li class="transport-item">
-                  <p>Меловые линии</p>
+                  <span>Меловые линии</span>
                 </li>
                 <li class="transport-item">
-                  <p>Сдик</p>
+                  <span>Сдик</span>
                 </li>
                 <li class="transport-item">
-                  <p>ТоксБерри</p>
+                  <span>ТоксБерри</span>
                 </li>
               </ul>
             </li>
@@ -183,15 +192,17 @@
           </ul>
         </div>
         <div class="contacts-wrapper">
-          <h3>Контакты</h3>
+          <h3 class="contacs-title">Контакты</h3>
           <ul class="contacts-list">
             <li class="contacts-item">
-              <p>Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
+              <p class="contacts-discription">Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
             </li>
             <li class="contacts-item">
               <p>Интернет-магазин «Девайс»</p>
-              <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-              <a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+              <address class="contacts-adress">
+                <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="contacts-adress-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+              </address>
             </li>
             <li class="contacts-item">
               <p>Время работы</p>
@@ -199,7 +210,7 @@
               <p>сб—вс: с 10:00 до 19:00</p>
             </li>
             <li class="contacts-item">
-              <a class="about-link" href="#">Напишите нам</a>
+              <a class="about-link button" href="#">Напишите нам</a>
             </li>
           </ul>
         </div>
@@ -207,29 +218,37 @@
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
         <div class="subscription">
-          <h3>Подпишитесь на рассылку</h3>
-          <p>Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+          <p class="subscription-discription">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="form-wrapper">
-          <form action="#" method="get">
-            <input type="text" name="subscription" placeholder="Ваш e-mail">
-            <input type="submit" value="Подписаться">
+          <form class="subscription-form" action="#" method="post">
+            <label class="form-label" for="subscription">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-mail" id="subscription" required>
+            <input class="subscription-button" type="submit" value="Подписаться">
           </form>
           <img src="#" width="" height="">
-          <p>Это бесплатно</p>
+          <p class="form-discription">Это бесплатно</p>
         </div>
       </section>
-      <footer>
-        <a class="footer-logo" href="#">
-          <img src="#" width="#" height="#" alt="Логотип Девайс.">
-        </a>
+      <footer class="page-footer">
         <div class="footer-wrapper">
-          <ul class="footer-user-list">
-            <li class="footer-user-item">
-              <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <ul class="footer-adress-list">
+            <li class="footer-adress-item">
+              <a class="footer-logo" href="#">
+                <img src="#" width="#" height="#" alt="Логотип Девайс.">
+              </a>
             </li>
-            <li class="footer-user-item">
-              <ul class="footer-nav-list">
+            <li class="footer-adress-item">
+              <address class="footer-adress">
+                <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
+            </li>
+          </ul>
+          <section class="footer-link">
+            <h2 class="visually-hidden">?</h2>
+            <div class="footer-user-wrapper">
+              <ul class="footer-user-list">
                 <li class="footer-nav-item">
                   <a class="footer-nav-link" href="#">
                     Доставка
@@ -246,33 +265,33 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="footer-nav-item">
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="footer-social-link" href="#">
+                    <img src="#" width="" height="" alt="Телеграм">
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="footer-social-link" href="#">
+                    <img src="#" width="" height="" alt="Youtube">
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="footer-social-link" href="#">
+                    <img src="#" width="" height="" alt="Twitter">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <div class="footer-contacts-wrapper">
+            <address class="footer-adress-phone">
               <a class="phone" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-social-wrapper">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <img src="#" width="" height="" alt="Телеграм">
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <img src="#" width="" height="" alt="Youtube">
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="#">
-                <img src="#" width="" height="" alt="Twitter">
-              </a>
-            </li>
-          </ul>
-          <a class="developer">
-            <img href="#" alt="Логотип сайта разработчика.">
-          </a>
+            </address>
+            <a class="developer">
+              <img href="#" alt="Логотип сайта разработчика." width="" height="">
+            </a>
+          </div>
         </div>
       </footer>
     </main>
