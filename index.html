@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин электроники Девайс.</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +13,7 @@
         </a>
         <form action="#" method="get">
           <input type="text" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
+          <button class="header-search" type="submit">Найти</button>
         </form>
         <ul class="user-list">
           <li class="user-item">
@@ -48,13 +49,13 @@
         <button class="hero-slider-control hero-slider-prev" type="button">Назад</button>
         <button class="hero-slider-control hero-slider-next" type="button">Вперед</button>
           <ul class="slider">
-            <li class="slide">
+            <li class="slide active">
               <article>
                 <img src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
                 <div class="slider-text">
-                  <h3>Порхает как бабочка,жалит как пчела!</h3>
+                  <h3>Порхает как бабочка, жалит как пчела!</h3>
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <p>Подробнее</p>
+                  <button type="button">Подробнее</button>
                   <dl>
                     <dt>Дальность полета</dt>
                     <dd>800 м</dd>
@@ -72,7 +73,7 @@
                 <div class="slider-text">
                   <h3>Худеем правильно!</h3>
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                  <p>Подробнее</p>
+                  <button type="button">Подробнее</button>
                   <dl>
                     <dt>Без подзарядки</dt>
                     <dd>48 часов</dd>
@@ -86,7 +87,7 @@
                 <div class="slider-text">
                   <h3>Делай селфи,как Бен Стиллер! </h3>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                  <p>Подробнее</p>
+                  <button type="button">Подробнее</button>
                   <dl>
                     <dt>Длина палки</dt>
                     <dd>8,5 м</dd>
@@ -165,7 +166,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item active">
             <button type="button">Доставка</button>
           </li>
           <li class="advantages-item">
@@ -176,15 +177,15 @@
           </li>
         </ul>
         <ul class="advantages-discription-list">
-          <li>
+          <li class="discription-item active">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li>
+          <li class="discription-item">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
           </li>
-          <li>
+          <li class="discription-item">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
@@ -200,18 +201,18 @@
           <h3>О нас</h3>
            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul>
+            <ul class="delivery-list">
               <li>
                 <span>Меловые линии</span>
               </li>
               <li>
-                <span>Сдик</span>
+                <span>СДИК</span>
               </li>
               <li>
                 <span>ТоксБерри</span>
               </li>
             </ul>
-            <a href="#">Подробнее о нас</a>
+            <a class="about-link" href="#">Подробнее о нас</a>
         </article>
         <article class="text-block">
           <h3>Контакты</h3>
@@ -222,9 +223,9 @@
             <a class="contacts-adress-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
           </address>
           <h4>Время работы</h4>
-          <br>пн—пт: с 10:00 до 22:00
+          <br>пн—пт: с 10:00 до 22:00 ?стилизация
           <br>сб—вс: с 10:00 до 19:00
-          <a class="about-link button" href="#">Напишите нам</a>
+          <a class="about-link" href="#">Напишите нам</a>
         </article>
       </section>
       <section class="subscription">
