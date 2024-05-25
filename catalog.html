@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин электроники Девайс.</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -128,7 +129,7 @@
             <span class="visually-hidden">Вниз</span>
           </a>
         </section>
-        <section>
+        <section class="catalog-products-card">
           <h3 class="visually-hidden">Каталог товаров</h3>
           <ul class="product-card-list">
             <li class="product-card-item">
@@ -137,7 +138,6 @@
                 <span class="product-card-price">500 ₽</span>
                 <img class="product-card-img" src="images/catalog-selfi.jpg" width="360" height="380" alt="">
               </a>
-              <a class="button" href="#">Подробнее</a>
             </li>
             <li class="product-card-item">
               <a class="product-card-link" href="#">
@@ -145,7 +145,6 @@
                 <span class="product-card-price">1500 ₽</span>
                 <img class="product-card-img" src="images/catalog-prof.jpg" width="360" height="380" alt="">
               </a>
-              <a class="button" href="#">Подробнее</a>
             </li>
             <li class="product-card-item">
               <a class="product-card-link" href="#">
@@ -160,10 +159,9 @@
                 <span class="product-card-price">1500 ₽</span>
                 <img class="product-card-img" src="images/catalog-hand.jpg" width="360" height="380" alt="">
               </a>
-              <a class="button" href="#">Подробнее</a>
             </li>
          </ul>
-         <button type="button">Загрузить ещё</button>
+         <button class="catalog-more" type="button">Загрузить ещё</button>
           <ul class="catalog-pagination">
             <li class="catalog-pagination-item">
               <a class="catalog-pagination-link pagination-back">
@@ -189,9 +187,8 @@
               <a class="catalog-pagination-link pagination-next" href="#">
                 <span>Вперёд</span>
               </a>
-              </li>
+            </li>
           </ul>
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
       </section>
     </main>
@@ -234,7 +231,7 @@
           <a class="phone" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
       <a class="developer" href="https://htmlacademy.ru">
-          <img href="images/developer-logo.svg" alt="Логотип сайта разработчика." width="115" height="33">
+          <img src="images/developer-logo.svg" alt="Логотип сайта разработчика." width="115" height="33">
       </a>
     </footer>
   </body>
