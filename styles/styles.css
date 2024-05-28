@@ -39,42 +39,54 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
 }
 
 .navigation-list {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  list-style: none;
+}
+
+.user-list {
+  list-style: none;
 }
 
 .header-navigation a {
   text-decoration: none;
-  color: black;
-}
-
-button {
-  font-family: inherit;
+  color: #000000;
 }
 
 button.header-search {
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
+  background-color: #ffe17f;
+  border: 2px solid #000000;
 }
 
-button.header-catalog {
+.header-catalog {
+  font-family: inherit;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 21px;
   text-transform: uppercase;
   width: 293px;
   min-height: 50px;
   text-align: start;
+  border: none;
+  background-color: #ffe17f;
+}
+
+.button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .slider-text {
@@ -91,13 +103,10 @@ button.header-catalog {
   margin-bottom: 23px;
 }
 
-p {
-  color: #444444;
-}
-
 .slider-text p {
   margin: 0;
   margin-bottom: 50px;
+  color: #444444;
 }
 
 .slide {
@@ -108,35 +117,34 @@ p {
   display: block;
 }
 
-dd {
+.table-discription {
   font-size: 36px;
 }
 
-dt {
+.table-title {
   font-size: 16px;
   color: #444444;
+}
+
+.catalog-list {
+  list-style: none;
 }
 
 .catalog-item a {
   display: block;
   background-color: #ffe17f;
   text-decoration: none;
-  color: black;
+  color: #000000;
   line-height: 24px;
 }
 
-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: black;
-  line-height: 21px;
-  margin: 0;
+.advantages-list {
+  list-style: none;
 }
 
 .advantages-item.active button {
   color: #ffe17f;
-  background-color: black;
+  background-color: #000000;
   padding: 0;
   margin: 0;
   width: 280px;
@@ -165,6 +173,10 @@ button {
   margin-bottom: 34px;
 }
 
+.discription-item p {
+  color: #444444;
+}
+
 .delivery-info button {
   background-color: #f0f0f0;
   width: 1160px;
@@ -177,7 +189,12 @@ button {
   margin: 0;
 }
 
+.main-contacts {
+  margin-bottom: 70px;
+}
+
 .main-contacts h3 {
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -186,8 +203,27 @@ button {
   margin-bottom: 48px;
 }
 
+.contacts-adress-text{
+  margin: 0;
+}
+
+.contacts-adress {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .contacts-adress-phone {
   color: #444444;
+}
+
+.job-time {
+  display: block;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.delivery-list {
+  list-style: none;
 }
 
 .delivery-list span {
@@ -195,20 +231,22 @@ button {
   line-height: 20px;
 }
 
+.text-block p {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #444444;
+}
+
 .text-block h4 {
   color: #444444;
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
-a.about-link {
+a.button {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: black;
-  line-height: 21px;
-  margin: 0;
 }
 
 .subscription h2{
@@ -219,13 +257,26 @@ a.about-link {
   margin: 0;
 }
 
+.subscription-text p {
+  color: #444444;
+}
+
 .footer-adress-text {
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
 }
 
 .page-footer {
   background-color: #444444;
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-social-list {
+  list-style: none;
 }
 
 .footer-nav-link {
@@ -249,11 +300,24 @@ a.about-link {
   font-size: 50px;
 }
 
+.user-compare {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #000000;
+}
+
+.catalog-filter-list {
+  list-style: none;
 }
 
 .catalog-products {
@@ -282,6 +346,10 @@ a.about-link {
   line-height: 20px;
 }
 
+.product-card-list {
+  list-style: none;
+}
+
 .product-card-link {
   font-weight: 700;
   text-decoration: none;
@@ -307,6 +375,11 @@ a.about-link {
   min-height: 55px;
   width: 100%;
   background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.catalog-pagination {
+  list-style: none;
 }
 
 .catalog-pagination-link {

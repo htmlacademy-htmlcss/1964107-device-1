@@ -55,14 +55,14 @@
                 <div class="slider-text">
                   <h3>Порхает как бабочка, жалит как пчела!</h3>
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <button type="button">Подробнее</button>
+                  <button class="button" type="button">Подробнее</button>
                   <dl>
-                    <dt>Дальность полета</dt>
-                    <dd>800 м</dd>
+                    <dt class="table-title">Дальность полета</dt>
+                    <dd class="table-discription">800 м</dd>
                   </dl>
                   <dl>
-                    <dt>Радиус поражения</dt>
-                    <dd>50 м</dd>
+                    <dt class="table-title">Радиус поражения</dt>
+                    <dd class="table-discription">50 м</dd>
                   </dl>
                 </div>
               </article>
@@ -73,10 +73,10 @@
                 <div class="slider-text">
                   <h3>Худеем правильно!</h3>
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                  <button type="button">Подробнее</button>
+                  <button class="button" type="button">Подробнее</button>
                   <dl>
-                    <dt>Без подзарядки</dt>
-                    <dd>48 часов</dd>
+                    <dt class="table-title">Без подзарядки</dt>
+                    <dd class="table-discription">48 часов</dd>
                   </dl>
                 </div>
               </article>
@@ -87,18 +87,18 @@
                 <div class="slider-text">
                   <h3>Делай селфи,как Бен Стиллер! </h3>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                  <button type="button">Подробнее</button>
+                  <button class="button" type="button">Подробнее</button>
                   <dl>
-                    <dt>Длина палки</dt>
-                    <dd>8,5 м</dd>
+                    <dt class="table-title">Длина палки</dt>
+                    <dd class="table-discription">8,5 м</dd>
                   </dl>
                   <dl>
-                    <dt>Вес палки</dt>
-                    <dd>5 кг</dd>
+                    <dt class="table-title">Вес палки</dt>
+                    <dd class="table-discription">5 кг</dd>
                   </dl>
                   <dl>
-                    <dt>Материал</dt>
-                    <dd>Карбон</dd>
+                    <dt class="table-title">Материал</dt>
+                    <dd class="table-discription">Карбон</dd>
                   </dl>
                 </div>
               </article>
@@ -167,13 +167,13 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item active">
-            <button type="button">Доставка</button>
+            <button class="button" type="button">Доставка</button>
           </li>
           <li class="advantages-item">
-            <button type="button">Гарантия</button>
+            <button class="button" type="button">Гарантия</button>
           </li>
           <li class="advantages-item">
-            <button type="button">Кредит</button>
+            <button class="button" type="button">Кредит</button>
           </li>
         </ul>
         <ul class="advantages-discription-list">
@@ -193,7 +193,7 @@
       </section>
       <section class="delivery-info">
         <h2 class="visually-hidden">Доставка под заказ</h2>
-        <button type="button">Доставим редкий товар под заказ</button>
+        <button class="button" type="button">Доставим редкий товар под заказ</button>
       </section>
       <section class="main-contacts">
         <h2 class="visually-hidden">Информация о магазине.</h2>
@@ -212,20 +212,20 @@
                 <span>ТоксБерри</span>
               </li>
             </ul>
-            <a class="about-link" href="#">Подробнее о нас</a>
+            <a class="button" href="#">Подробнее о нас</a>
         </article>
         <article class="text-block">
           <h3>Контакты</h3>
-          <p class="contacts-discription">Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
           <h4>Интернет-магазин «Девайс»</h4>
           <address class="contacts-adress">
-            <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <div class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</div>
             <a class="contacts-adress-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
           </address>
           <h4>Время работы</h4>
-          <br>пн—пт: с 10:00 до 22:00 ?стилизация
-          <br>сб—вс: с 10:00 до 19:00
-          <a class="about-link" href="#">Напишите нам</a>
+              <span class="job-time">пн—пт: с 10:00 до 22:00<br>
+              сб—вс: с 10:00 до 19:00<br></span>
+          <a class="button" href="#">Напишите нам</a>
         </article>
       </section>
       <section class="subscription">
@@ -237,7 +237,7 @@
           <form class="subscription-form" action="#" method="post">
             <label class="form-label visually-hidden" for="subscription">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-mail" id="subscription" required>
-            <button type="submit">Подписаться</button>
+            <button class="button" type="submit">Подписаться</button>
             <p class="form-discription">Это бесплатно</p>
           </form>
         </div>
@@ -249,7 +249,7 @@
         <address class="footer-adress">
            <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <ul>
+        <ul class="footer-nav-list">
           <li>
             <a class="footer-nav-link" href="#">Доставка</a>
           </li>
@@ -260,7 +260,7 @@
             <a class="footer-nav-link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul>
+        <ul class="footer-social-list">
           <li>
             <a class="footer-social-link" href="https://t.me/htmlacadem">
               <img src="images/telegram.svg" width="14" height="12" alt="Телеграм">
