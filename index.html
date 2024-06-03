@@ -11,21 +11,23 @@
         <a class="header-logo">
           <img src="images/device-logo.svg" width="145" height="36" alt="Логотип Девайс.">
         </a>
-        <form action="#" method="get">
-          <input type="text" name="search" placeholder="Поиск по сайту">
-          <button class="header-search" type="submit">Найти</button>
-        </form>
-        <ul class="user-list">
-          <li class="user-item">
-            <a class="user-logo" href="#">Войти</a>
-          </li>
-          <li class="user-item">
-            <a class="user-compare" href="#">Сравнить</a>
-          </li>
-          <li class="user-item">
-            <a class="user-cart">Корзина</a>
-          </li>
-        </ul>
+        <div class="user-menu-wrapper">
+          <form action="#" method="get">
+            <input type="text" name="search" placeholder="Поиск по сайту">
+            <button class="header-search" type="submit">Найти</button>
+          </form>
+          <ul class="user-list">
+            <li class="user-item">
+              <a class="user-logo" href="#">Войти</a>
+            </li>
+            <li class="user-item">
+              <a class="user-compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-item">
+              <a class="user-cart">Корзина</a>
+            </li>
+          </ul>
+        </div>
           <ul class="navigation-list">
             <li class="navigation-item">
               <button class="header-catalog" type="button">Каталог товаров</button>
@@ -42,7 +44,7 @@
           </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
       <h1 class="visually-hidden">Магазин электроники "Девайс"</h1>
       <section class="hero-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -50,7 +52,7 @@
         <button class="hero-slider-control hero-slider-next" type="button">Вперед</button>
           <ul class="slider">
             <li class="slide active">
-              <article>
+              <article class="slider-card">
                 <img src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
                 <div class="slider-text">
                   <h3>Порхает как бабочка, жалит как пчела!</h3>
@@ -68,7 +70,7 @@
               </article>
             </li>
             <li class="slide">
-              <article>
+              <article class="slider-card">
                 <img src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
                 <div class="slider-text">
                   <h3>Худеем правильно!</h3>
@@ -82,7 +84,7 @@
               </article>
             </li>
             <li class="slide">
-              <article>
+              <article class="slider-card">
                 <img src="images/slider-3.png" width="560" height="560" alt="Палки для селфи">
                 <div class="slider-text">
                   <h3>Делай селфи,как Бен Стиллер! </h3>
@@ -128,68 +130,82 @@
           <li class="catalog-item">
             <a href="#">
               <h3>Виртуальная реальность</h3>
-              <img src="images/virt-real-main.svg" alt="" width="97" height="55">
+              <div class="catalog-item-wrapper">
+                <img src="images/virt-real-main.svg" alt="" width="97" height="55">
+              </div>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
               <h3>Моноподы для селфи</h3>
-              <img src="images/main-selfi.svg" alt="" width="86" height="117">
+              <div class="catalog-item-wrapper">
+                <img src="images/main-selfi.svg" alt="" width="86" height="117">
+              </div>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
               <h3>Экшн-камеры</h3>
-              <img src="images/main-kamera.svg" alt="" width="71" height="87">
+              <div class="catalog-item-wrapper">
+                <img src="images/main-kamera.svg" alt="" width="71" height="87">
+              </div>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
               <h3>Фитнес-браслеты</h3>
-              <img src="images/main-fitness-braslet.svg" alt="" width="108" height="65">
+              <div class="catalog-item-wrapper">
+                <img src="images/main-fitness-braslet.svg" alt="" width="108" height="65">
+              </div>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
               <h3>Умные часы</h3>
-              <img src="images/main-watch.svg" alt="" width="56" height="98">
+              <div class="catalog-item-wrapper">
+                <img src="images/main-watch.svg" alt="" width="56" height="98">
+              </div>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
               <h3>Квадрокоптеры</h3>
-              <img src="images/main-cvadracopter.svg" alt="" width="132" height="69">
+              <div class="catalog-item-wrapper">
+                <img src="images/main-cvadracopter.svg" alt="" width="132" height="69">
+              </div>
             </a>
           </li>
         </ul>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item active">
-            <button class="button" type="button">Доставка</button>
-          </li>
-          <li class="advantages-item">
-            <button class="button" type="button">Гарантия</button>
-          </li>
-          <li class="advantages-item">
-            <button class="button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <ul class="advantages-discription-list">
-          <li class="discription-item active">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="discription-item">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
-          </li>
-          <li class="discription-item">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </li>
-        </ul>
+        <div class="advantages-conteiner">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item active">
+              <button class="button" type="button">Доставка</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button" type="button">Гарантия</button>
+            </li>
+            <li class="advantages-item">
+              <button class="button" type="button">Кредит</button>
+            </li>
+          </ul>
+          <ul class="advantages-discription-list">
+            <li class="discription-item active">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="discription-item">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+            </li>
+            <li class="discription-item">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="delivery-info">
         <h2 class="visually-hidden">Доставка под заказ</h2>
@@ -230,16 +246,18 @@
       </section>
       <section class="subscription">
         <div class="subscription-wrapper">
-          <h2>Подпишитесь на рассылку</h2>
           <div class="subscription-text">
-            <p>Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
-          <form class="subscription-form" action="#" method="post">
-            <label class="form-label visually-hidden" for="subscription">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-mail" id="subscription" required>
-            <button class="button" type="submit">Подписаться</button>
-            <p class="form-discription">Это бесплатно</p>
-          </form>
+          <div class="form-subscription-wrapper">
+            <form class="subscription-form" action="#" method="post">
+              <label class="form-label visually-hidden" for="subscription">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-mail" id="subscription" required>
+              <button class="button" type="submit">Подписаться</button>
+            </form>
+           <p class="form-discription">Это бесплатно</p>
+         </div>
         </div>
       </section>
       <footer class="page-footer">
