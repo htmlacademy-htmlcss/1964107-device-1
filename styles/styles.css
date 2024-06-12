@@ -55,12 +55,7 @@ body {
   margin: 0;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .main-inner {
-
   flex-grow: 1;
 }
 
@@ -115,6 +110,7 @@ body {
   flex-wrap: wrap;
   align-self: end;
   gap: 45px;
+  justify-content: end;
 }
 
 .navigation-item {
@@ -173,7 +169,7 @@ button.header-search {
 }
 
 .main-container {
-  margin: 0 auto;
+  flex-grow: 1;
 }
 
 .hero-slider {
@@ -467,7 +463,6 @@ a.button {
 
 .subscription {
   background-color: #f0f0f0;
-  width: 1440px;
   padding: 64px 141px 56px 141px;
 }
 
@@ -520,9 +515,7 @@ a.button {
 
 .page-footer {
   background-color: #444444;
-  width: 1440px;
   padding: 62px 140px 65px 140px;
-  margin: 0 auto;
 }
 
 .footer-adress {
@@ -677,8 +670,6 @@ a.button {
 
 .catalog-products {
   background-color: #f0f0f0;
-  width: 1440px;
-  margin: 0 auto;
 }
 
 .catalog-products-wrapper {
