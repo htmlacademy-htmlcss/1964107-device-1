@@ -14,7 +14,7 @@
           </a>
           <div class="user-menu-wrapper">
             <form class="nav-form" action="#" method="get">
-              <input type="text" name="search" placeholder="Поиск по сайту">
+              <input class="header-form" type="text" name="search" placeholder="Поиск по сайту">
               <button class="header-search" type="submit">Найти</button>
             </form>
             <ul class="user-nav-list">
@@ -71,7 +71,7 @@
           <ul class="navigation-list">
             <li class="navigation-item nav-catalog">
               <button class="header-catalog" type="button">
-                <span>Каталог товаров</span>
+                <span class="header-catalog-button">Каталог товаров</span>
               </button>
             </li>
             <li class="navigation-item">
@@ -84,6 +84,20 @@
               <a class="navigation-link" href="#">Контакты</a>
             </li>
           </ul>
+          <ul class="header-catalog-list close">
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Виртуальная реальность</a>
+              <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+              <a class="header-catalog-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+              <a class="header-catalog-link" href="#">Умные-часы</a>
+            </li>
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -94,7 +108,7 @@
         <button class="hero-slider-control hero-slider-prev" type="button"><span class="visually-hidden">Вперед</span></button>
         <button class="hero-slider-control hero-slider-next" type="button"><span class="visually-hidden">Назад</span></button>
           <ul class="slider">
-            <li class="slide active">
+            <li class="slide">
               <article class="slider-card">
                 <div class="slider-img">
                   <img src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
@@ -103,18 +117,20 @@
                   <h3>Порхает как бабочка, жалит как пчела!</h3>
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <button class="slider-button button" type="button"><span>Подробнее</span></button>
-                  <dl>
-                    <dt class="table-title">Дальность полета</dt>
-                    <dd class="table-discription">800 м</dd>
-                  </dl>
-                  <dl>
-                    <dt class="table-title">Радиус поражения</dt>
-                    <dd class="table-discription">50 м</dd>
-                  </dl>
+                  <div class="table-wrapper">
+                    <dl>
+                      <dt class="table-title">Дальность полета</dt>
+                      <dd class="table-discription">800 м</dd>
+                    </dl>
+                    <dl>
+                      <dt class="table-title">Радиус поражения</dt>
+                      <dd class="table-discription">50 м</dd>
+                    </dl>
+                  </div>
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide visually-hidden">
               <article class="slider-card">
                 <div class="slider-img">
                   <img src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
@@ -123,14 +139,16 @@
                   <h3>Худеем правильно!</h3>
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                   <button class="slider-button button" type="button"><span>Подробнее</span></button>
-                  <dl>
-                    <dt class="table-title">Без подзарядки</dt>
-                    <dd class="table-discription">48 часов</dd>
-                  </dl>
+                  <div class="table-wrapper">
+                    <dl>
+                      <dt class="table-title">Без подзарядки</dt>
+                      <dd class="table-discription">48 часов</dd>
+                    </dl>
+                  </div>
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide visually-hidden">
               <article class="slider-card">
                 <div class="slider-img">
                   <img src="images/slider-3.png" width="560" height="560" alt="Палки для селфи">
@@ -139,18 +157,20 @@
                   <h3>Делай селфи,как Бен Стиллер! </h3>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                   <button class="slider-button button" type="button"><span>Подробнее</span></button>
-                  <dl>
-                    <dt class="table-title">Длина палки</dt>
-                    <dd class="table-discription">8,5 м</dd>
-                  </dl>
-                  <dl>
-                    <dt class="table-title">Вес палки</dt>
-                    <dd class="table-discription">5 кг</dd>
-                  </dl>
-                  <dl>
-                    <dt class="table-title">Материал</dt>
-                    <dd class="table-discription">Карбон</dd>
-                  </dl>
+                  <div class="table-wrapper">
+                    <dl>
+                      <dt class="table-title">Длина палки</dt>
+                      <dd class="table-discription">8,5 м</dd>
+                    </dl>
+                    <dl>
+                      <dt class="table-title">Вес палки</dt>
+                      <dd class="table-discription">5 кг</dd>
+                    </dl>
+                    <dl>
+                      <dt class="table-title">Материал</dt>
+                      <dd class="table-discription">Карбон</dd>
+                    </dl>
+                  </div>
                 </div>
               </article>
             </li>
@@ -344,23 +364,17 @@
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-link" href="https://t.me/htmlacadem">
-              <div class="social-logo-wrapper">
-                <img src="images/telegram-logo.svg" width="14" height="12" alt="Телеграм">
-              </div>
+              <img src="images/telegram-logo.svg" width="14" height="12" alt="Телеграм">
             </a>
           </li>
           <li>
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <div class="social-logo-wrapper">
-                <img src="images/youtube-logo.svg" width="16" height="11" alt="Youtube">
-              </div>
+              <img src="images/youtube-logo.svg" width="16" height="11" alt="Youtube">
             </a>
           </li>
           <li>
             <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-              <div class="social-logo-wrapper">
-                <img src="images/twitter-logo.svg" width="15" height="14" alt="Twitter">
-              </div>
+              <img src="images/twitter-logo.svg" width="15" height="14" alt="Twitter">
             </a>
           </li>
         </ul>

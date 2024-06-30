@@ -14,7 +14,7 @@
           </a>
           <div class="user-menu-wrapper">
             <form class="nav-form" action="#" method="get">
-              <input type="text" name="search" placeholder="Поиск по сайту">
+              <input class="header-form" type="text" name="search" placeholder="Поиск по сайту">
               <button class="header-search" type="submit">Найти</button>
             </form>
             <ul class="user-nav-list">
@@ -72,7 +72,7 @@
           <ul class="navigation-list">
             <li class="navigation-item nav-catalog">
               <button class="header-catalog" type="button">
-                <span>Каталог товаров</span>
+                <span class="header-catalog-button">Каталог товаров</span>
               </button>
             </li>
             <li class="navigation-item">
@@ -83,6 +83,20 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header-catalog-list close">
+            <li class="header-catalog-item">
+              <a href="#">Виртуальная реальность</a>
+              <a href="catalog.html">Моноподы для cелфи</a>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li class="header-catalog-item">
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Умные-часы</a>
+            </li>
+            <li class="header-catalog-item">
+              <a href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </nav>
@@ -201,15 +215,18 @@
                     <span class="product-card-price">500 ₽</span>
                   </div>
                   <img class="product-card-img" src="images/catalog-selfi.jpg" width="360" height="380" alt="">
+                  <span class="product-card-more button"><span>Подробнее</span></span>
                 </a>
+
               </li>
               <li class="product-card-item">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link new" href="#">
                   <div class="card-text-wrapper">
                     <h3 class="product-card-title">Профессиональная селфи&#8209;палка</h3>
                     <span class="product-card-price">1500 ₽</span>
                   </div>
                   <img class="product-card-img" src="images/catalog-prof.jpg" width="360" height="380" alt="">
+                  <span class="product-card-more button"><span>Подробнее</span></span>
                 </a>
               </li>
               <li class="product-card-item">
@@ -219,6 +236,7 @@
                     <span class="product-card-price">2500 ₽</span>
                   </div>
                   <img class="product-card-img" src="images/catalog-float.jpg" width="360" height="380" alt="">
+                  <span class="product-card-more button"><span>Подробнее</span></span>
                 </a>
               </li>
               <li class="product-card-item">
@@ -228,6 +246,7 @@
                     <span class="product-card-price">1500 ₽</span>
                   </div>
                   <img class="product-card-img" src="images/catalog-hand.jpg" width="360" height="380" alt="">
+                  <span class="product-card-more button"><span>Подробнее</span></span>
                 </a>
               </li>
           </ul>
@@ -252,11 +271,6 @@
               </li>
               <li class="catalog-pagination-item">
                 <a class="catalog-pagination-link" href="#"><span>15</span></a>
-              </li>
-              <li class="catalog-pagination-item pagination-next">
-                <a class="catalog-pagination-link next" href="#">
-                  <span>Вперёд</span>
-                </a>
               </li>
               <li class="catalog-pagination-item pagination-next">
                 <a class="catalog-pagination-link next" href="#">
@@ -290,23 +304,17 @@
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-link" href="https://t.me/htmlacadem">
-              <div class="social-logo-wrapper">
-                <img src="images/telegram-logo.svg" width="14" height="12" alt="Телеграм">
-              </div>
+              <img src="images/telegram-logo.svg" width="14" height="12" alt="Телеграм">
             </a>
           </li>
           <li>
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <div class="social-logo-wrapper">
-                <img src="images/youtube-logo.svg" width="16" height="11" alt="Youtube">
-              </div>
+              <img src="images/youtube-logo.svg" width="16" height="11" alt="Youtube">
             </a>
           </li>
           <li>
             <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-              <div class="social-logo-wrapper">
-                <img src="images/twitter-logo.svg" width="15" height="14" alt="Twitter">
-              </div>
+              <img src="images/twitter-logo.svg" width="15" height="14" alt="Twitter">
             </a>
           </li>
         </ul>
