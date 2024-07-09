@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин электроники Девайс.</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="favicon.ico" rel='shortcut icon' type='image/x-icon'>
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +15,7 @@
           </a>
           <div class="user-menu-wrapper">
             <form class="nav-form" action="#" method="get">
-              <input class="header-form" type="text" name="search" placeholder="Поиск по сайту">
+              <input class="header-form" type="text" name="search" placeholder="Поиск по сайту" required>
               <button class="header-search" type="submit">Найти</button>
             </form>
             <ul class="user-nav-list">
@@ -70,19 +71,19 @@
                           <a class="popover-products-link" href="#">
                             <img class="popover-product-img" src="images/catalog-selfi.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                             <p class="popover-products-discription">Любительская селфи-палка</p>
-                            <button class="popover-products-delete" type="button">
-                              <span class="visually-hidden">Удалить из корзины</span>
-                            </button>
                           </a>
+                          <button class="popover-products-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
                         </li>
                         <li class="popover-products-item">
                           <a class="popover-products-link" href="#">
                             <img class="popover-product-img" src="images/catalog-prof.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
                             <p class="popover-products-discription">Профессиональная селфи-палка</p>
-                            <button class="popover-products-delete" type="button">
-                              <span class="visually-hidden">Удалить из корзины</span>
-                            </button>
                           </a>
+                          <button class="popover-products-delete" type="button">
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
                         </li>
                       </ul>
                       <div class="popover-text-wrapper">
@@ -99,6 +100,20 @@
           <ul class="navigation-list">
             <li class="navigation-item nav-catalog">
               <button class="header-catalog" type="button">Каталог товаров</button>
+              <ul class="header-catalog-list">
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Виртуальная реальность</a>
+                  <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+                  <a class="header-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+                  <a class="header-catalog-link" href="#">Умные-часы</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
@@ -108,20 +123,6 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="header-catalog-list">
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Виртуальная реальность</a>
-              <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
-              <a class="header-catalog-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
-              <a class="header-catalog-link" href="#">Умные-часы</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </nav>
@@ -142,7 +143,7 @@
                 <div class="slider-text">
                   <h3>Порхает как бабочка, жалит как пчела!</h3>
                   <p>Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <a class="slider-button button" href="#"><span>Подробнее</span></button></a>
+                  <a class="slider-button button" href="#"><span>Подробнее</span></a>
                   <div class="table-wrapper">
                     <dl>
                       <dt class="table-title">Дальность полета</dt>
@@ -164,7 +165,7 @@
                 <div class="slider-text">
                   <h3>Худеем правильно!</h3>
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                  <a class="slider-button button" href="#"><span>Подробнее</span></button></a>
+                  <a class="slider-button button" href="#"><span>Подробнее</span></a>
                   <div class="table-wrapper">
                     <dl>
                       <dt class="table-title">Без подзарядки</dt>
@@ -182,7 +183,7 @@
                 <div class="slider-text">
                   <h3>Делай селфи,как Бен Стиллер! </h3>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                  <a class="slider-button button" href="#"><span>Подробнее</span></button></a>
+                  <a class="slider-button button" href="#"><span>Подробнее</span></a>
                   <div class="table-wrapper">
                     <dl>
                       <dt class="table-title">Длина палки</dt>
@@ -233,7 +234,7 @@
           <li class="catalog-item">
             <a href="catalog.html">
               <h3>Моноподы для&nbsp;селфи</h3>
-              <div class="catalog-item-wrapper">
+              <div class="catalog-item-wrapper selfi">
                 <img src="images/main-selfi.svg" alt="" width="86" height="117">
               </div>
             </a>
@@ -312,7 +313,7 @@
             <path d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z" fill="black"/>
             </svg>
           </span>
-          <div class="delivery-info-text">Доставим редкий товар под заказ</div>
+          <span class="delivery-info-text">Доставим редкий товар под заказ</span>
           <span class="delivery-icon info">
             <span class="visually-hidden">Информацияо доставке</span>
           </span>
@@ -339,7 +340,7 @@
         </article>
         <article class="text-block">
           <h3>Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <h4>Интернет-магазин «Девайс»</h4>
           <address class="contacts-adress">
             <div class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</div>
@@ -420,7 +421,7 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <form class="modal-form" accept="#" method="get">
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-item-wrapper">
               <div class="modal-item">
                 <h3 class="modal-form-title">Ваше имя:</h3>
@@ -440,7 +441,7 @@
               <div class="modal-item">
                 <h3 class="modal-form-title">Что нужно привезти:</h3>
                 <label class="modal-item-field close">
-                  <input class="modal-input discription" placeholder="В свободной форме" type="text">
+                  <input class="modal-input discription" placeholder="В свободной форме" type="text" required>
                 </label>
               </div>
               <div class="modal-item tooltip">
@@ -456,9 +457,9 @@
                 <div class="modal-item product">
                   <button class="modal-product-button" type="button"><span class="visually-hidden">Убрать товар</span></button>
                   <label class="modal-product-sum">
-                    <input class="input-sum" placeholder="0" type="text" value="1">
+                    <input class="input-sum" placeholder="0" type="number" value="1">
                   </label>
-                  <button class="modal-product-button plus" type="button"><span class="visually-hidden">Добавить товар</span></button>
+                  <button class="modal-product-button plus" type="submit"><span class="visually-hidden">Добавить товар</span></button>
                 </div>
               </div>
             </div>
